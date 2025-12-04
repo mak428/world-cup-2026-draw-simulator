@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0b1020;
+  color: #eef1ff;
+}
+
+h1 {
+  text-align: center;
+  margin: 16px 0 4px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #a4b0ff;
+  margin-bottom: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 16px 16px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  background: #4f46e5;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+}
+
+button:hover {
+  background: #6366f1;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr);
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+.pot-card {
+  background: linear-gradient(145deg, #111827, #020617);
+  border-radius: 12px;
+  padding: 8px 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.pot-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+  text-align: center;
+  color: #c7d2fe;
+}
+
+.pot-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 360px;
+  overflow-y: auto;
+  font-size: 0.85rem;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  margin-bottom: 2px;
+  background: rgba(15,23,42,0.9);
+  border: 1px solid transparent;
+  transition: background 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
+}
+
+.team span.flag {
+  font-size: 1.05rem;
+}
+
+.team.drawn {
+  opacity: 0.45;
+  transform: translateX(3px);
+  border-color: #4ade80;
+  background: rgba(15,23,42,0.5);
+}
+
+.groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.group-card {
+  background: linear-gradient(145deg, #020617, #111827);
+  border-radius: 14px;
+  padding: 8px 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+  border: 1px solid rgba(148,163,184,0.2);
+}
+
+.group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.group-name {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.group-pot-label {
+  font-size: 0.7rem;
+  color: #9ca3af;
+}
+
+.group-team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.85rem;
+  min-height: 70px;
+}
+
+.group-team-list li {
+  margin-bottom: 2px;
+  padding: 3px 5px;
+  border-radius: 6px;
+  background: rgba(15,23,42,0.9);
+}
+
+.status {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin-top: 4px;
+  min-height: 18px;
+}
