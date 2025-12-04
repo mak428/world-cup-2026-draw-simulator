@@ -1,0 +1,25 @@
+{
+  "name": "world-cup-draw-2026-simulator",
+  "version": "1.0.0",
+  "description": "This is a website that allows users to simulate the 2026 world cup draw",
+  "homepage": "https://github.com/mak428/world-cup-2026-draw-simulator#readme",
+  "bugs": {
+    "url": "https://github.com/mak428/world-cup-2026-draw-simulator/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mak428/world-cup-2026-draw-simulator.git"
+  },
+  "license": "ISC",
+  "author": "Muki Krishnan",
+  "type": "commonjs",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1"
+  }
+}
