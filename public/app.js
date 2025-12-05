@@ -16,7 +16,7 @@ const pots = {
     { name: "Spain", flag: "🇪🇸" },
     { name: "Argentina", flag: "🇦🇷" },
     { name: "France", flag: "🇫🇷" },
-    { name: "England", flag: "🏴" },
+    { name: "England", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿" },
     { name: "Portugal", flag: "🇵🇹" },
     { name: "Brazil", flag: "🇧🇷" },
     { name: "Netherlands", flag: "🇳🇱" },
@@ -38,7 +38,7 @@ const pots = {
     { name: "Australia", flag: "🇦🇺" }
   ],
   3: [
-    { name: "Scotland", flag: "🏴" },
+    { name: "Scotland", flag: "🏴󠁧󠁢󠁳󠁣󠁴󠁿" },
     { name: "Panama", flag: "🇵🇦" },
     { name: "Norway", flag: "🇳🇴" },
     { name: "Egypt", flag: "🇪🇬" },
